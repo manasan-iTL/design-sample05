@@ -1,0 +1,8 @@
+//ブレークポイントの設定
+$breakpoint : 1024px;
+
+@mixin sp {
+    @media (max-width : ($breakpoint)) {
+      @content;  
+    } 
+}
