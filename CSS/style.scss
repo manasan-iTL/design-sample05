@@ -6,3 +6,91 @@ $breakpoint : 1024px;
       @content;  
     } 
 }
+
+//色・文字フォントの定義
+
+$content-backgroundcolor : #F5F5F5;
+$content-color : #333333;
+$contentTitle-fontsize : 18px;
+$contentP-fontsize : 14px;
+
+
+.contentTitle {
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: $contentTitle-fontsize;
+}
+
+.background {
+  background-color: $content-backgroundcolor;
+}
+
+//全体のレイアウト設定
+
+.wrap {
+  max-width: 800px;
+  margin : 15px auto;
+}
+
+
+//ヘッダー部分
+
+.header {
+  margin: 30px auto 15px auto;
+  max-width: 1000px;
+
+  .logo {
+    width: 18%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .mainVisual {
+    width: 100%;
+    margin-top: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//INDEX部分
+
+.index {
+  padding: 60px;
+}
+
+.contentTitle {
+  text-align: center;
+}
+
+.border {
+  width: inherit;
+  border: solid 1px $content-color;
+}
+
+.indexList {
+  display: table;
+  margin: 0 auto;
+}
+
+
+//写真リスト
+
+.photoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  li {
+    width: 49%;
+    
+    img {
+      width: 100%;
+    }
+  }
+}
